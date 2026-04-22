@@ -58,7 +58,7 @@ async function handleEvent(event) {
 
     await lineClient.replyMessage(event.replyToken, {
       type: "text",
-      text: "AI側でエラーが出ました。少ししてからもう一度送ってください。",
+      text: "AIエラー。もう一度送ってください。",
     });
 
     return null;
@@ -67,5 +67,5 @@ async function handleEvent(event) {
 
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
-  console.log("LINE BOT AI 起動");
+  console.log("LINE BOT AI 起動🔥");
 });
